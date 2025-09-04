@@ -14,6 +14,7 @@
             <a class="active" href="/">Home</a>
             <a href="./project.html">Projects</a>
             <a href="./contact.html">Contact</a>
+            <a href="#" onclick="return secretAccess();">Secret</a>
         </nav>
     </header>
 
@@ -28,5 +29,16 @@
     <footer>
         <p>&copy; 2025 Made by Phamikk</p>
     </footer>
+    <script>
+    function secretAccess() {
+        var pwd = prompt('Zadejte heslo pro přístup:');
+        if (pwd === 'tajneheslo') { // Změňte na své heslo
+            window.location.href = 'secret.html';
+        } else if (pwd !== null) {
+            alert('Špatné heslo!');
+        }
+        return false;
+    }
+    </script>
 </body>
 </html>

@@ -14,6 +14,7 @@
             <a href="./index.html">Home</a>
             <a href="./project.html">Projects</a>
             <a class="active" href="./contact.html">Contact</a>
+            <a href="#" onclick="return secretAccess();">Secret</a>
         </nav>
     </header>
 
@@ -21,8 +22,8 @@
         <section class="hero" style="box-shadow: none; background: none;">
             <h2>Yo Linkos</h2>
             <div class="social-links">
-                <a href="https://twitter.com"><img src="./images/twitter.png" alt="Twitter"></a>
-                <a href="https://youtube.com"><img src="./images/youtube.png" alt="YouTube"></a>
+                <a href="https://pornhub.com"><img src="./images/twitter.png" alt="Twitter"></a>
+                <a href="https://youtu.be/ZbWIs6z3Thw?si=2R3xa1JCMLdafvhk"><img src="./images/youtube.png" alt="YouTube"></a>
                 <a href="https://discord.com"><img src="./images/discord.png" alt="Discord"></a>
                 <a href="mailto:phamikk@example.com"><img src="./images/mail.png" alt="Email"></a>
             </div>
@@ -32,5 +33,17 @@
     <footer>
         <p>&copy; 2025 Made by Phamikk</p>
     </footer>
+
+    <script>
+        function secretAccess() {
+            var pwd = prompt('Zadejte heslo pro přístup:');
+            if (pwd === 'tajneheslo') { // Změňte na své heslo
+                window.location.href = 'secret.html';
+            } else if (pwd !== null) {
+                alert('Špatné heslo!');
+            }
+            return false;
+        }
+    </script>
 </body>
 </html>
