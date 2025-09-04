@@ -21,7 +21,7 @@
 
 /* ===================== Body Styles ===================== */
 body {
-	background: url('../images/wallppr.jpg') no-repeat center center fixed;
+	background: #000 url('../images/wallppr.jpg') no-repeat center center fixed;
 	background-size: cover;
 	color: #e0e0e0;
 	height: 100vh;
@@ -122,10 +122,11 @@ nav a:hover, .active {
 
 /* ===================== Project Card ===================== */
 .project-card {
-	background: rgba(26, 26, 26, 0.9);
+	background: rgba(20, 20, 20, 0.5); /* Match hero section background */
 	padding: 20px;
 	border-radius: 10px;
-	border: 1px solid #00ffcc;
+	box-shadow: 0 0 10px rgba(255, 0, 76, 0.4); /* Match hero section shadow */
+	border: none;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -135,10 +136,10 @@ nav a:hover, .active {
 }
 
 .project-card h3 {
-	color: #00ffcc;
+	color: #ff0000; /* Match hero h2 color */
 	font-size: 1.5rem;
 	margin-bottom: 10px;
-	text-shadow: 0 0 8px #00ffcc;
+	text-shadow: 0 0 12px #ff008c; /* Match hero h2 shadow */
 }
 
 .project-card p {
